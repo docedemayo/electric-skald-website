@@ -318,7 +318,7 @@
             overflow: hidden;
             background: var(--navy-dark);
             transition: var(--transition);
-            aspect-ratio: 4/3;
+            aspect-ratio: 9/16;
             display: flex;
             flex-direction: column;
         }
@@ -349,8 +349,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
             display: block;
             transition: var(--transition);
+        }
+
+        .gallery-item img.align-top {
+            object-position: top;
         }
 
         .gallery-item:hover {
@@ -631,7 +636,7 @@
                     <div class="gallery-caption">Burning Man — Through the Looking Glass</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="mission_sf_bookstore.jpg" alt="Josh at Mission SF bookstore holding Tarot by the Moon" loading="lazy">
+                    <img src="mission_sf_bookstore.jpg" class="align-top" alt="Josh at Mission SF bookstore holding Tarot by the Moon" loading="lazy">
                     <div class="gallery-caption">Mission SF — Book Reading</div>
                 </div>
             </div>
